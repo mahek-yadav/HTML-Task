@@ -1,6 +1,111 @@
 <html>
 <head>
     <title>HTML Task</title>
+    <style>
+    #mainHeading{
+        text-align: center;
+        font-size: 47px;
+        text-shadow: 2px 2px 2px lightgray;
+   } 
+   #mainHeading:hover{
+        color: blue;
+        cursor:pointer;
+   }
+   #subHeading{
+        color: rgb(56, 203, 211);
+        text-align: center;
+        letter-spacing: 2px;
+        opacity:0.8;
+ }
+   .description{
+    border:4px solid black;
+    background-color: rgb(247, 172, 251);
+   }
+    .seperator{
+        width: 120px;
+        height: 4px;
+        border-radius: 10px;
+        background-color: rgb(21, 162, 209);
+    }
+    .hacker{
+        background-color: black;
+        color: lime;
+        padding: 10px;
+        font-family:  monospace;
+        box-shadow: 0 0 10px lime;
+    }
+    .topics{
+        list-style: none;
+        padding: 15px;
+        background-color: rgb(243, 243, 9);
+        width: 280px;
+        border-radius: 12px;
+    }
+    .topics li{
+        padding: 8px 0;
+        font-size: 16px;
+        color:blue;
+    }
+    #steps{
+        background-color: rgb(173, 216, 230);
+        padding-left: 40px;
+        font-weight: bold;
+        line-height: 2;
+        border-radius: 12px;
+        color:brown;
+    }
+    #steps li{
+        padding: 8px 0;
+        font-size: 16px;
+        color:blueviolet;
+    }
+    .external-link{
+        text-decoration: none;
+        color:aquamarine;
+        transition: all 0.3s ease;
+    }
+    .external-link:hover {
+            text-decoration: underline;
+            color: #0c0988;
+    }
+    .card{
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        padding: 20px;
+        margin: 10px auto;
+        max-width: 200px;
+        background-color: #fff;
+    }
+    .accentWord{
+        font-weight: bold;
+        color: #ff4081 !important;
+        font-size: 18px;
+    }
+    #submitBtn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #6a5acd !important;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        #submitBtn:hover {
+            background-color: #836fff;
+            box-shadow: 0 0 15px rgba(131, 111, 255, 0.7);
+            transform: scale(1.08);
+        }
+
+    footer.footer {
+            text-align: center;
+            font-size: 0.8em !important;
+            color: #777;
+            margin-top: 40px;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -9,7 +114,7 @@
     <h1 id="mainHeading">Welcome to My HTML Task Page</h1>
 
     <!-- Subheading with color style -->
-    <h3 style="color: darkblue;">Learning Basic HTML Tags</h3>
+    <h3 id="subHeading">Learning Basic HTML Tags</h3>
 
     <!-- Paragraph with class, text formatting tags, and line break -->
     <p class="description">
@@ -19,10 +124,10 @@
     </p>
 
     <!-- Horizontal line with color -->
-    <hr style="color: gray; height: 2px;">
+    <hr class="seperator">
 
     <!-- Preformatted text -->
-    <pre style="color: green;">
+    <pre class="hacker">
        this is preformatted text
     it will appear exactly as written here
     </pre>
@@ -47,8 +152,8 @@
     </a>
 
     <!-- Div with span for styled word -->
-    <div>
-        This is a <span style="color: red;">highlighted</span> sentence inside a div.
+    <div class="card">
+        This is a <span class="accentWord" style="color: red;">highlighted</span> sentence inside a div.
     </div>
 
     <!-- Button with id and background color -->
